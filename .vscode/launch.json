@@ -2,6 +2,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ServiceRegistryApplication",
+      "request": "launch",
+      "mainClass": "com.rbanos.service.registry.ServiceRegistryApplication"
+    },
+    {
+      "type": "java",
       "name": "Launch UserServiceApplication",
       "request": "launch",
       "mainClass": "com.rbanos.user.UserServiceApplication"
@@ -31,6 +37,16 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.rbanos.user.UserServiceApplication",
       "projectName": "user-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ServiceRegistryApplication<service-registry>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.rbanos.service.registry.ServiceRegistryApplication",
+      "projectName": "service-registry",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
