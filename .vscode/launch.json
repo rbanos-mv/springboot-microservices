@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch UserServiceApplication",
+      "request": "launch",
+      "mainClass": "com.rbanos.user.UserServiceApplication"
+    },
+    {
+      "type": "java",
+      "name": "Launch DepartmentServiceApplication",
+      "request": "launch",
+      "mainClass": "com.rbanos.department.DepartmentServiceApplication",
+      "projectName": "department-service",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=39943 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=department-service"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-DepartmentServiceApplication<department-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.rbanos.departmentservice.DepartmentServiceApplication",
+      "projectName": "department-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-UserServiceApplication<user-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.rbanos.user.UserServiceApplication",
+      "projectName": "user-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
